@@ -5,11 +5,12 @@ import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { GetInTouch } from "@/components/GetInTouch";
+import { Page } from "@/types/page";
+
 
 export default function Page() {
-  const [currentPage, setCurrentPage] = useState<"home" | "about" | "contact">(
-    "home"
-  );
+  
+const [currentPage, setCurrentPage] = useState<Page>("home");
   const [theme, setTheme] = useState<"dark" | "light">("light");
   const [mounted, setMounted] = useState(false);
 

@@ -4,10 +4,10 @@ import type React from "react"
 import { Mail, Linkedin, Github, Send } from "lucide-react"
 import { useState } from "react"
 import { useToast } from "@/hooks/use-toast"
-
+import { Page } from "@/types/page";
 interface GetInTouchProps {
   theme: "dark" | "light"
-  setCurrentPage: (page: "home" | "about" | "contact") => void
+setCurrentPage: (page: Page) => void;
 }
 
 export function GetInTouch({ theme, setCurrentPage }: GetInTouchProps) {

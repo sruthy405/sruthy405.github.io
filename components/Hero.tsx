@@ -1,9 +1,9 @@
 "use client"
-
+import { Page } from "@/types/page";
 import { ExternalLink } from "lucide-react"
 
 interface HeroProps {
-  setCurrentPage: (page: "home" | "about" | "contact") => void
+  setCurrentPage: (page: Page) => void;
   theme: "dark" | "light"
 }
 

@@ -1,7 +1,8 @@
 "use client"
-
+import { Page } from "@/types/page";
 import { ProjectCard } from "./ProjectCard"
 import { FaLocationDot } from "react-icons/fa6";
+
 
 import { useState } from "react";
 
@@ -9,7 +10,7 @@ import { useState } from "react";
 
 interface AboutProps {
   theme: "dark" | "light"
-  setCurrentPage: (page: "home" | "about" | "contact") => void
+setCurrentPage: (page: Page) => void;
 }
 
 const skills = [
