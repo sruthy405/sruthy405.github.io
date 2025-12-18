@@ -1,0 +1,138 @@
+/* Overlay */
+.exit-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Modal container */
+.exit-modal {
+  background: #ffffff;
+  width: 95%;
+  max-width: 440px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+  animation: scaleIn 0.25s ease-out;
+}
+
+/* Top header section to mimic screenshot */
+.exit-header {
+  background: #f8f3e8; /* identical light warm background */
+  position: relative;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Your Goodbye GIF */
+.exit-gif {
+  width: 130px;
+  height: auto;
+}
+
+/* Close X button */
+.exit-x {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.6;
+  color: #444;
+}
+.exit-x:hover {
+  opacity: 1;
+}
+
+/* Bottom content section */
+.exit-content {
+  padding: 30px 30px 35px;
+  text-align: center;
+}
+
+.exit-content h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2e2a5a; /* dark navy-ish like reference */
+  margin-bottom: 10px;
+}
+
+.exit-content p {
+  font-size: 16px;
+  color: #5a5770;
+  margin-bottom: 25px;
+}
+
+/* Purple button */
+.exit-button {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 10px;
+  background: #7b50ff; /* reference purple */
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.exit-button:hover {
+  background: #6a45e3;
+}
+
+/* Animation */
+@keyframes scaleIn {
+  from { transform: scale(0.92); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+/* ================================
+   DARK MODE VERSION OF EXIT POPUP
+   ================================ */
+@media (prefers-color-scheme: dark) {
+
+  .exit-modal {
+    background: #1a1a1a; /* dark card */
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+  }
+
+  .exit-header {
+    background: #2b2b2b; /* dark header */
+  }
+
+  .exit-x {
+    color: #bbb;
+  }
+  .exit-x:hover {
+    color: #fff;
+  }
+
+  .exit-content h2 {
+    color: #ffffff;
+  }
+
+  .exit-content p {
+    color: #cccccc;
+  }
+
+  .exit-button {
+    background: #7b50ff;
+    color: #ffffff;
+  }
+  .exit-button:hover {
+    background: #6a45e3;
+  }
+
+  .exit-overlay {
+    background: rgba(0, 0, 0, 0.6); /* stronger blur for dark mode */
+  }
+}
