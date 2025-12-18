@@ -1,11 +1,11 @@
 "use client";
-
+import { Page } from "@/types/page";
 import { useState, useEffect } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { GetInTouch } from "@/components/GetInTouch";
-import { Page } from "@/types/page";
+
 
 
 export default function Page() {
@@ -47,15 +47,10 @@ const [currentPage, setCurrentPage] = useState<Page>("home");
       />
 
       <main className="space-y-20">
-        {currentPage === "home" && (
-          <Hero setCurrentPage={setCurrentPage} theme={theme} />
-        )}
-        {currentPage === "about" && (
-          <About theme={theme} setCurrentPage={setCurrentPage} />
-        )}
-        {currentPage === "contact" && (
-          <GetInTouch theme={theme} setCurrentPage={setCurrentPage} />
-        )}
+       {currentPage === "home" && <Hero setCurrentPage={setCurrentPage} theme={theme} />}
+{currentPage === "about" && <About setCurrentPage={setCurrentPage} theme={theme} />}
+{currentPage === "contact" && <GetInTouch setCurrentPage={setCurrentPage} theme={theme} />}
+
       </main>
     </div>
   );

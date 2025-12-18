@@ -3,10 +3,10 @@ import { Page } from "@/types/page";
 import { Home, Sun, Moon, User, Mail } from "lucide-react"
 
 interface NavigationProps {
-  currentPage: "home" | "about" | "contact"
-setCurrentPage: (page: Page) => void;
-  theme: "dark" | "light"
-  toggleTheme: () => void
+  currentPage: Page;
+  setCurrentPage: (page: Page) => void;
+  theme: "dark" | "light";
+  toggleTheme: () => void;
 }
 
 export function Navigation({ currentPage, setCurrentPage, theme, toggleTheme }: NavigationProps) {
