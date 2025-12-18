@@ -1,13 +1,15 @@
 "use client"
 
+
 import { useState, useEffect } from "react"
 import { Navigation } from "./components/Navigation"
 import { Hero } from "./components/Hero"
 import { About } from "./components/About"
 import "./styles/globals.css"
-
+type Page = "home" | "about" | "contact";
 export default function App() {
-  const [currentPage, setCurrentPage] = useState<"home" | "about">("home")
+const [currentPage, setCurrentPage] = useState<Page>("home")
+
   const [theme, setTheme] = useState<"dark" | "light">("light")
   const [mounted, setMounted] = useState(false)
 
