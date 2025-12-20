@@ -305,8 +305,9 @@ export function About({ theme, setCurrentPage }: AboutProps) {
   main="A modern, responsive portfolio website built with React and Tailwind CSS featuring smooth animations and theme switching."
   image="/project_1.png"
   tags={["React", "Tailwind CSS", "JavaScript", "Responsive Design"]}
-  github="https://github.com/yourrepo-portfolio"
-  demo="https://github.com/sruthy405/sruthy405.github.io"
+  github="https://github.com/sruthy405/sruthy405.github.io"
+  demo="https://sruthy405githubio.vercel.app/"
+  
 />
 
            <ProjectCard
