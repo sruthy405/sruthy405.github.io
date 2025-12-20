@@ -306,7 +306,7 @@ export function About({ theme, setCurrentPage }: AboutProps) {
   image="/project_1.png"
   tags={["React", "Tailwind CSS", "JavaScript", "Responsive Design"]}
   github="https://github.com/yourrepo-portfolio"
-  demo="https://yourdemo-portfolio.com"
+  demo="https://github.com/sruthy405/sruthy405.github.io"
 />
 
            <ProjectCard
