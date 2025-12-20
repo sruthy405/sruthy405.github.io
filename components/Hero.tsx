@@ -1,5 +1,6 @@
 "use client"
 import { Page } from "@/types/page";
+
 import { ExternalLink } from "lucide-react"
 
 interface HeroProps {

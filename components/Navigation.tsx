@@ -1,5 +1,6 @@
 "use client"
 import { Page } from "@/types/page";
+
 import { Home, Sun, Moon, User, Mail } from "lucide-react"
 
 interface NavigationProps {

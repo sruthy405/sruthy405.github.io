@@ -1,5 +1,6 @@
 "use client"
 import { Page } from "@/types/page";
+
 import type React from "react"
 import { Mail, Linkedin, Github, Send } from "lucide-react"
 import { useState } from "react"

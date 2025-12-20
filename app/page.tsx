@@ -8,7 +8,7 @@ import { GetInTouch } from "@/components/GetInTouch";
 
 
 
-export default function Page() {
+export default function HomePage() {
   
 const [currentPage, setCurrentPage] = useState<Page>("home");
   const [theme, setTheme] = useState<"dark" | "light">("light");
