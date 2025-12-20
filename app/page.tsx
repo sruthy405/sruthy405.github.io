@@ -50,6 +50,7 @@ const [currentPage, setCurrentPage] = useState<Page>("home");
        {currentPage === "home" && <Hero setCurrentPage={setCurrentPage} theme={theme} />}
 {currentPage === "about" && <About setCurrentPage={setCurrentPage} theme={theme} />}
 {currentPage === "contact" && <GetInTouch setCurrentPage={setCurrentPage} theme={theme} />}
+console.log("DEPLOYING FROM app/page.tsx ONLY");
 
       </main>
     </div>
