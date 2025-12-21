@@ -17,15 +17,18 @@ const skills = [
   { name: "HTML", image: "/html.svg" },
   { name: "CSS", image: "/css.svg" },
   { name: "JavaScript", image: "/images/javascript.png" },
+   { name: "Python", image: "/python-svgrepo-com.svg" },
+  { name: "TypeScript", image: "/typescript-icon-svgrepo-com.svg" },
   { name: "React", image: "/react.svg" },
   { name: "Node.js", image: "/node.svg" },
   { name: "Java", image: "/images/java.png" },
   { name: "PHP", image: "/php.svg" },
-  { name: "SQL", image: "/sql.svg" },
-  { name: "Flutter", image: "/placeholder.svg" },
-  { name: "Python", image: "/placeholder.svg" },
-  { name: "TypeScript", image: "/placeholder.svg" },
-  { name: "MongoDB", image: "/placeholder.svg" },
+  { name: "SQL", image: "/sql-seeklogo.svg" },
+    { name: "MySQL", image: "/mysql-logo-svgrepo-com.svg" },
+{ name: "Git and Github", image: "/git and github logo.png" },
+{ name: "Bootstrap", image: "/bootstrap-seeklogo.png" },
+ 
+
 ]
 
 export function About({ theme, setCurrentPage }: AboutProps) {
