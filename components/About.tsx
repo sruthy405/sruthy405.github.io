@@ -25,7 +25,7 @@ const skills = [
   { name: "PHP", image: "/php.svg" },
   { name: "SQL", image: "/sql-seeklogo.svg" },
     { name: "MySQL", image: "/mysql-logo-svgrepo-com.svg" },
-{ name: "Git and Github", image: "/git and github logo.png" },
+{ name: "Git and Github", image: "/GitGithub-1536x864.png" },
 { name: "Bootstrap", image: "/bootstrap-seeklogo.png" },
  
 
@@ -343,18 +343,14 @@ export function About({ theme, setCurrentPage }: AboutProps) {
 />
 
              <ProjectCard theme={theme} 
-            title="Weather App2" 
-            main="Responsive app showing real-time weather data using API integration." 
-            image="/images/weather.jpg" tags={["HTML", "CSS", "API"]}
-             github="https://github.com/yourrepo" 
-             demo="https://yourdemo.com" />
+            title="Placement Portal" 
+            main="The Placement Portal manage users, student profiles, companies, and applications, with role-based authentication allowing admins to manage placements and students to apply for eligible drives." 
+            image="/project_5.png" tags={["HTML", "CSS","JS", "PHP", "MYSQL"]}
+             github="https://github.com/sruthy405/PlacementPortal" 
+             demo="https://placementportalcse.great-site.net/placementportal/
+" />
 
-             <ProjectCard theme={theme} 
-            title="Weather App3" 
-            main="Responsive app showing real-time weather data using API integration." 
-            image="/images/weather.jpg" tags={["HTML", "CSS", "API"]}
-             github="https://github.com/yourrepo" 
-             demo="https://yourdemo.com" />
+            
 
             
 
